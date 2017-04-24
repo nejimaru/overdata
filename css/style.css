@@ -1,0 +1,20 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.formcontain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: overfont;
+  background-color: #ddd;
+}
+.formcontain *,
+.formcontain *:after,
+.formcontain *:before {
+   -webkit-box-sizing: border-box; box-sizing: border-box;
+ }

@@ -1,0 +1,300 @@
+@font-face {
+  font-family: overfont;
+  src: url("../font/overfont.ttf");
+}
+
+
+@font-face {
+  font-family: italoverfont;
+  src: url("../font/italoverfont.ttf");
+}
+
+@font-face {
+  font-family: geo;
+  src: url("../font/geo.ttf");
+}
+
+@font-face {
+  font-family: italogeo;
+  src: url("../font/italogeo.ttf");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+header{
+  height: 280px;
+  width: 100%;
+  background-color: #434848;
+  margin-bottom: 50px;
+}
+
+span, h1, h2{
+  cursor: default;
+}
+
+.upheader{
+  height: 75%;
+  display: flex;
+  align-items: center;
+}
+
+.upHeaderContainer{
+  height: 60%;
+  width: 100%;
+  display: flex;
+}
+
+.idArea{
+  flex: 1;
+  display: flex;
+}
+
+.leftSide{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.playerIcon{
+  height: 83%;
+  width: 75%;
+  position: relative;
+  border: solid 1px #B2B0B0;
+  border-radius: 4px;
+}
+
+.leftSide img{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.playerLevel{
+  height: 35%;
+  width: 35%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 5px;
+  background-color: rgba(255, 255, 255, .5);
+  z-index: 2;
+}
+
+.playerLevel span{
+  font-family: geo;
+  font-weight: bolder;
+}
+
+.mainSide{
+  flex: 4;
+  height: 80%;
+  display: flex;
+  margin: auto;
+}
+
+.titleArea{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1{
+  font-family: italoverfont;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  font-weight: 550;
+  color: #F99E1A;
+  text-shadow: #C47D15 1px 1px, #C47D15 0 0, #C47D15 0 0, #C47D15 0 0;
+}
+
+.plformArea{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.plformArea h2{
+  margin-top: .5em;
+  font-family: geo;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.statArea{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.statContainer{
+  height: 80%;
+  width: 90%;
+  margin-top: 2%;
+  display: flex;
+}
+
+.statZone{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
+
+.playerInfo{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: overfont;
+  font-size: 25px;
+  color: #F99E1A;
+}
+
+.rankIconArea{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -10px;
+}
+
+.rankIconArea img{
+  height: 50%;
+  width: 50%;
+}
+
+.rankNumberArea{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  margin-left: -30px;
+}
+
+.titleZone{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  font-family: geo;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.downheader{
+  height: 25%;
+  display: flex;
+  background-color: #B2B0B0;
+}
+
+.headerNavArea{
+  flex:1;
+  display: flex;
+}
+
+.headerNavArea ul{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.headerNavArea li{
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-family: geo;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-align: center;
+  transition-property: all;
+  transition-duration: .1s;
+}
+
+.headerNavArea li:hover{
+  height: calc(100% - 2px);
+  background-color: #434848;
+  border-bottom: solid 2px #F99E1A;
+}
+
+.headerNavArea li a{
+  color: black;
+}
+
+.headerNavArea li:hover a{
+  color: white;
+}
+
+.switcherModeArea{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.switcherZoneContainer{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switcherZone{
+  height: 60%;
+  width: 80%;
+  display: flex;
+  border: solid 2px white;
+  border-radius: 5px;
+  transition-property: all;
+  transition-duration: .1s;
+}
+
+.quickMatchZone{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: geo;
+  font-weight: 600;
+  border-right: solid 2px white;
+  cursor: pointer;
+}
+
+.quickMatchZone:hover, .rankedMatchZone:hover{
+  background-color: #434848;
+}
+
+.quickMatchZone a, .rankedMatchZone a{
+  color: black;
+}
+
+.quickMatchZone:hover a, .rankedMatchZone:hover a{
+  color: white;
+}
+
+.rankedMatchZone{
+  flex: 1.4;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: geo;
+  font-weight: 600;
+  cursor: pointer;
+}
+.alc{
+  text-align: center;
+}
